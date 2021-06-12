@@ -1,0 +1,533 @@
+
+
+body{
+    width: 100vw;
+}
+
+
+/* top div */
+.topdiv{
+background-color: #ED0786;
+color: white;
+padding-left: 20px;
+}
+.topdiv li{
+margin-left: 50px;
+}
+.topdiv a{
+color: white;
+}
+.navbar{
+background: transparent;
+}
+.teb ul li{
+margin-left: 20px;
+}
+/* top div end */
+
+
+
+
+/* footer section */
+
+.footer{
+    height: 300px;
+    width: 100vw;
+    background-color: #423F8D;
+}
+.footer .quicklinks h4{
+    color: rgb(158, 153, 153);
+    margin-left: 350px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    
+}
+
+.footer .links{
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+
+}
+.footer .links a{
+    margin: 15px;
+    text-decoration: none;
+    margin-top: 20px !important;
+    padding-top: 20px !important;
+    font-size: 18px;
+    line-height: 50px;
+    
+    color: white;
+    cursor: pointer;
+}
+.footer .linksone{
+    height: 200px;
+    width: 200px;
+    margin-left: 350px;
+    margin-top: -200px;
+}
+.footer .linksone a{
+    margin: 15px;
+    text-decoration: none;
+    margin-top: 20px !important;
+    padding-top: 20px !important;
+    font-size: 18px;
+    line-height: 50px;
+    
+    color: white;
+    cursor: pointer;
+}
+.footer .linkstwo{
+    height: 200px;
+    width: 200px;
+    margin-left:660px;
+    margin-top: -200px;
+
+}
+.footer .linkstwo a{
+   
+    margin: 15px;
+    text-decoration: none;
+    margin-top: 20px !important;
+    padding-top: 20px !important;
+    font-size: 18px;
+    line-height: 50px;
+    
+    color: white;
+    cursor: pointer;
+}
+.footer .sociallinks {
+    color: rgb(158, 153, 153);
+    margin-left: 700px;
+    margin-top: -275px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+.footer .sociallinks .links{
+    height: 200px;
+    width: 180px;
+    margin-left: 330px;
+    margin-top: 10px;
+}
+.footer .sociallinks .links a{
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+
+    letter-spacing: 1px;
+}
+.copyright h5{
+    font-size: 16px;
+    cursor: pointer;
+
+    color: white;
+    margin-left: 350px;
+    padding-top: 20px;
+    letter-spacing: 8px;
+    color: rgb(158, 153, 153);
+
+
+}
+
+.cards_align{
+    display: flex;
+}
+.cards_align .card{
+    margin: 25px;
+}
+
+.popularCourse .cards_align .card{
+    border-radius: 20px !important;
+}
+.popularCourse .cards_align .card img{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.feedback{
+  margin-left: 10px;
+    
+}
+.popularCourse h2{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 10px;
+    color: #423F8D;
+    
+}
+.connect{
+    width: 35%;
+    margin-left: 25px;
+}
+.connect h2{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #423F8D;
+    
+  
+}
+.connect form .btn{
+   width: 200px;
+   font-size: 25px;
+   padding: 10px;
+   border-radius: 10px;
+   margin-top: 15px;
+    
+  
+}
+.connect form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.connect form input {
+    margin-top: 15px;
+    height: 60px;
+    border: 2px solid #423F8D;
+    border-radius: 10px;
+  }
+
+  .social-icons{
+      height: 420px;
+      width: 500px;
+      /* background-color: green; */
+      margin-left: 700px;
+      margin-top: -420px;
+  }
+  .social-icons .facebook{
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      margin-top: 120px !important;
+  }
+  .social-icons .facebook img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+  }
+  .social-icons .instagram{
+      height: 60px;
+      width: 60px;
+      margin-left: 300px;
+      margin-top: -61px;
+  }
+  .social-icons .instagram img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+  }
+  .social-icons .twitter{
+      height: 60px;
+      width: 60px;
+      margin-left: 300px;
+      margin-top: -55px;
+  }
+  .social-icons .twitter img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+  }
+  .social-icons .youtube{
+      height: 60px;
+      width: 60px;
+      margin-left: 30px;
+      margin-top: 60px !important;
+
+
+  }
+  .social-icons .youtube img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+  }
+
+.feedback h2{
+    padding: 5px;
+    margin-left: 33px;
+    margin-top: 10px;
+    color: #423F8D;
+    
+}
+.feedback .card{
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #423F8D;
+    border-radius: 10px !important;
+    
+}
+.feedback .container .profile {
+    height: 100px;
+    width: 100px;
+    border-radius:50% ;
+    margin-left: 100px;
+    
+}
+.feedback  .container .profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius:50% ;
+    
+}
+.feedback  .container  h5{
+   color: #423F8D;
+   margin-left: 65px;
+   margin-top: 10px;
+    
+}
+
+.feedback .card .card-body p{
+    font-size: 25px;
+    color: black;
+    
+}
+
+
+
+.popularCourse h5{
+    color: #423F8D;
+    /* margin-left: 10px; */
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.popularCourse new{
+   margin-left: 20px;
+   font-size: 20px;
+      
+}
+.popularCourse label{
+   font-size: 20px;
+   text-decoration: line-through;
+    
+}
+.popularCourse a{
+  margin-top: 10px;;
+    
+}
+
+.popularCourse .btn{
+    width: 100%;
+    font-size: 25px;
+    background: #ED0786;
+    color: white;
+    outline: none;
+    border: none;
+   border-radius: 10px;
+
+}
+
+.popularCourse .btn:hover{
+    background: none;
+    color: #ED0786;
+   border: 1px solid #ED0786;
+   border-radius: 10px;
+
+}
+
+.customColor{
+    color:#423F8D !important;
+    font-weight: 500 !important;
+}
+.customColor:hover{
+   color: white !important;
+    background: #ED0786;
+    border-radius: 10px;
+}
+form input[type=search] {
+    border: 2px solid #423F8D;
+    border-radius: 5px;
+  }
+.form-group textarea{
+    border: 2px solid #423F8D;
+    border-radius: 5px;
+  }
+form .btn{
+    background: #ED0786;
+    color: white;
+   margin: 5px;
+   padding: 3px;
+}
+form .btn:hover{
+    margin: 5px;
+    padding: 3px;
+    background: none;
+    color: #ED0786;
+   border: 1px solid #ED0786;
+   border-radius: 4px;
+}
+
+.card-body span{
+    color: rgb(158, 6, 69);
+    font-size: 20px;
+}
+.card-body span i{
+    padding: 20px;
+    margin: 20px !important;
+}
+
+.carousel-inner a .carousel-control-prev:hover{
+    background-color: black !important;
+}
+
+
+
+
+.carousel-indicators li {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100% !important;
+  }
+
+   .carousel-inner .carousel-item {
+      height: 420px;
+      width: 100vw;
+  }
+  
+
+
+
+.carousel-inner .carousel-caption h5{
+    font-size: 80px;
+    margin-bottom:60px;
+    font-weight: bold;
+}
+.carousel-inner .carousel-caption p{
+    font-size: 40px;
+    margin-bottom:60px;
+    /* background-color: #000; */
+    font-weight: bold;
+}
+.login-div{
+    width: 500px;
+    /* background: red; */
+    margin: 30px;
+    margin-left: 400px;
+}
+.login-div h3{
+    margin: 15px 30px;
+}
+.login-div form .customm{
+    width: 450px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login-div form  input{
+    border: 2px solid #423F8D;
+    border-radius: 5px;
+  }
+  .login-div a{
+      margin-left: 120px;
+  }
+  .login-div a:hover{
+    background-color: transparent;
+
+}
+  .login-div a span{
+     color: #423F8D;
+     font-weight: bold;
+  }
+  .login-div .anchorcus{
+     font-size: 10px;
+  }
+  .login-div select{
+    border: 2px solid #423F8D;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+ /* css for my profile */
+ .my-profile .image{
+     height: 150px;
+     width: 150px;
+     margin-left: 10px;
+     border-radius: 50%;
+ }
+ .my-profile .image img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+ .edit-section form{
+     /* background-color: red; */
+     margin-top: -500px !important;
+ }
+ .my-profile .tabs{
+     
+     width: 200px;
+     margin-top: 20px;
+     margin-left: 10px;
+ }
+ .my-profile .tabs li{
+     
+    list-style: none;
+    margin-bottom: 20px;
+    
+ }
+ .my-profile .tabs li a{
+     padding: 10px;
+     margin: 20px 5px;
+     color: #423F8D;
+     font-weight: bold;
+     text-decoration: none;
+     line-height: 50px;
+     font-size: 15px;
+    
+ }
+ .my-profile .tabs li:hover{
+    
+     color: #fff;
+     background-color: #ED0786;
+     border-radius: 10px;
+     
+    }
+    .my-profile .tabs li a:hover{
+        
+     color: #fff;
+   }
+   .my-profile .profile-section{
+       width: 50vw;
+       margin-left: 300px;
+       /* background-color: red; */
+       margin-top: -400px;
+     
+   }
+ 
+   .my-profile .profile-section form  input{
+    border: 2px solid #423F8D;
+    border-radius: 5px;
+    width: 50%;
+   }
+   .my-profile .tabs span{
+       padding: 10px;
+   }
+
+   .my-profile .profile-section .title1{
+       /* background-color: red; */
+       height: auto;
+       width: 150px;
+       font-size: 15px;
+       font-weight: bold;
+       
+   }
+   .my-profile .profile-section .title2{
+       /* background-color: green; */
+       height: auto;
+       width: 50px;
+       margin-left: 150px; font-size: 15px;
+       font-weight: bold;
+       margin-top: -312px;
+   }
+   .my-profile .profile-section .title3{
+       /* background-color: yellow; */
+       height: auto;
+       width: 300px;
+       margin-left: 200px;
+       font-size: 15px;
+       font-weight: bold;
+       margin-top: -432px;
+   }
+ 
