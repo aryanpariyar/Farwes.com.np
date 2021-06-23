@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Carousel;
+use App\Models\User;
+use App\Models\UserAdmin;
+use Auth;
+use Hash;
 
 class DashboardController extends Controller
 {
@@ -43,7 +47,7 @@ class DashboardController extends Controller
             $carouselVariable->isActive = 1;
         }
         $carouselVariable->save();
-        return  redirect(route('home'));
+        return  redirect(route('carouselData'));
     }
     
     
@@ -80,4 +84,52 @@ class DashboardController extends Controller
         // dd($storeAll);
            return view('newonew',["newkey"=>$storeAll]);
     }
+
+    function adminLogin(){
+        return view('admin-login');
+    }
+
+    function adminRegister(){
+        return view('admin-register');
+    }
+
+
+    // 
+   
+    
+    function loginAdmin()
+    {        
+        $request = Request();
+        $email = $request['email'];
+        $password = $request['password'];
+        $store = Auth::attempt(['email' => $email, 'password' => $password]);
+        return redirect()->route('dashboard');
+       
+     }
+
+     // For Logout start here
+     function proceedToLogout() 
+     {
+        $user = Auth::user();
+         Auth::logout();
+         return redirect()->route('home');
+     }
+        // For Logout end here
+
+    //  For Register a User
+    function registerAdmin(){
+        $request = Request()->all();
+        $store = new UserAdmin;
+            $store->name = $request['name'];
+            $store->email = $request['email'];
+            $store->password = Hash::make($request['password']);
+            $store->save();
+            return redirect(route('adminLogin'));
+    }
+
+    // 
+
+
+
+
 }

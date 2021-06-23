@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(83, 81, 81);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    /* height: 500px;
+    width: 500px; */
+
+}
+.container form label{
+    font-size: 20px;
+}
+.container form .form-control{
+    position: absolute;
+
+    left: 150px;
+    height: 30px;
+}
+.container form button{
+    width: 105%;
+    height: 30px;
+}
+.container a{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: 2rem;
+    color: white;
+    margin-top: 190px;
+    margin-left: 500px;
+}

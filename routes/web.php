@@ -26,6 +26,7 @@ Route::get('/','HomeController@checkNavbar')->name('home');
 
 // Route::get('/newonew','DashboardController@showAllCarouselDat');
 
+Route::get('test','HomeController@demo');
 Route::get('login','HomeController@showLogin')->name('login');
 Route::post('login','HomeController@authenticate');
 Route::post('register','HomeController@addAllDataToFrom');

@@ -76,83 +76,21 @@
   <h2>POPULAR COURSES</h2>
   {{-- one --}}
  <div class="cards_align slider">
-  <div class="card shadow  rounded " >
-    <img src="images/2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary center">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- two --}}
-  <div class="card shadow  rounded" >
-    <img src="images/3.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- three --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-     
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- four --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- five --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-     
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- six --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-     
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
+  @foreach ($courseKey as $main )
+  <div class="col mb-3">
+      <div class="card shadow  rounded " >
+          <img src="{{ $main['image'] }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ $main['courseName'] }}</h5>
+            <p class="card-text">{!! $main['description'] !!}</p>
+            <label for="">${{ $main['totalPrice'] }}</label><new>${{ $main['discountPrice'] }}</new> <br>
+            <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
+            <a href="#" class="btn btn-primary center">ENROLL NOW</a>
+           </div>
+         </div>
+        </div>     
+        @endforeach
+
  </div>
 </div>
  {{-- Recent Added course section --}}
@@ -161,83 +99,21 @@
   <h2>RECENT ADDED COURSES</h2>
   {{-- one --}}
  <div class="cards_align slider">
-  <div class="card shadow  rounded " >
-    <img src="images/2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary center">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- two --}}
-  <div class="card shadow  rounded" >
-    <img src="images/3.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- three --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-     
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- four --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- five --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-     
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
-  {{-- six --}}
-  <div class="card shadow  rounded" >
-    <img src="images/4.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <label for="">$300</label><new>$30</new> <br>
-      
-      <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
-      
-      <a href="#" class="btn btn-primary">ENROLL NOW</a>
-    </div>
-  </div>
+  @foreach ($courseKey as $main )
+  <div class="col mb-3">
+      <div class="card shadow  rounded " >
+          <img src="{{ $main['image'] }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ $main['courseName'] }}</h5>
+            <p class="card-text">{!! $main['description'] !!}</p>
+            <label for="">${{ $main['totalPrice'] }}</label><new>${{ $main['discountPrice'] }}</new> <br>
+            <span><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i><i class="fas fa-star" style="margin-right: 10px;"></i></span><br>
+            <a href="#" class="btn btn-primary center">ENROLL NOW</a>
+           </div>
+         </div>
+        </div>     
+        @endforeach
+  
  </div>
 </div>
 {{-- Product For You section --}}

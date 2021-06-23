@@ -1,0 +1,53 @@
+.course-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.course-container .card{
+    border-radius: 20px !important;
+
+}
+.course-container .card img{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.course-container .card h5{
+    color: #423F8D;
+    /* margin-left: 10px; */
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.course-container .card new{
+   margin-left: 20px;
+   font-size: 20px;
+}     
+
+.course-container .card label{
+   font-size: 20px;
+   text-decoration: line-through;
+    
+}
+.course-container .card a{
+  margin-top: 10px;
+    
+}
+
+.course-container .card .btn{
+    width: 100%;
+    font-size: 25px;
+    background: #ED0786;
+    color: white;
+    outline: none;
+    border: none;
+   border-radius: 10px;
+
+}
+
+.course-container .card .btn:hover{
+    background: none;
+    color: #ED0786;
+   border: 1px solid #ED0786;
+   border-radius: 10px;
+
+}

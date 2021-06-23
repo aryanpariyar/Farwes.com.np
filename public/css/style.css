@@ -7,6 +7,7 @@ body{
 
 /* top div */
 .topdiv{
+    width: 100vw;
 background-color: #ED0786;
 color: white;
 padding-left: 20px;
@@ -129,12 +130,15 @@ margin-left: 20px;
 
 
 }
+.popularCourse{
+    width: 100vw;
+}
 
 .cards_align{
     display: flex;
 }
 .cards_align .card{
-    margin: 25px;
+    margin: 25px 25px 25px 20px;
 }
 
 .popularCourse .cards_align .card{
@@ -303,7 +307,7 @@ margin-left: 20px;
     
 }
 .popularCourse a{
-  margin-top: 10px;;
+  margin-top: 10px;
     
 }
 

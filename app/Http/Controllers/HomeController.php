@@ -7,7 +7,6 @@ use App\Models\User;
 use App\Models\Carousel;
 use App\Models\Course;
 use Hash;
-
 use Auth;
 
 
@@ -49,6 +48,24 @@ class HomeController extends Controller
     function checkNavbar(){
           
         $islogin = Auth::check();
+
+// for course
+                $storeData=Course::get();
+                $courseObject=[];
+                $incrementt=0;
+                foreach($storeData as $newObject)
+                {
+                    //  dd($newObject);
+                    $newVariable['courseName']=$newObject->courseName;
+                    $newVariable['image']=$newObject->image;
+                    $newVariable['totalPrice']=$newObject->totalPrice;
+                    $newVariable['discountPrice']=$newObject->discountPrice;
+                    $newVariable['description']=$newObject->description;
+                    
+                    $courseObject[$incrementt++]=$newVariable;
+                }
+                // for course
+
               $storeData=Carousel::get();
               $arrayObject=[];
               $increment=0;
@@ -65,7 +82,7 @@ class HomeController extends Controller
               }
             //   dd($arrayObject);
           
-        return view('welcome',['name'=>$islogin,'useKey'=>$arrayObject]);
+        return view('welcome',['name'=>$islogin,'useKey'=>$arrayObject,'courseKey'=>$courseObject]);
     }
 
     function showLogin(){
@@ -169,7 +186,7 @@ class HomeController extends Controller
         // dd($request);
         $carouselVariable=new Course;
         
-        $carouselVariable->coursename=$request["coursename"];
+        $carouselVariable->courseName=$request["coursename"];
         $carouselVariable->slug=$request["courseslug"];
         $imageName = time().'.'.$request["image"]->extension();  
         $request["image"]->move(public_path('images'), $imageName);
@@ -189,6 +206,7 @@ class HomeController extends Controller
             $carouselVariable->isActive = 1;
         }
         $carouselVariable->save();
+        // dd($carouselVariable);
         return  redirect(route('courses'));
     }
 
@@ -199,7 +217,7 @@ class HomeController extends Controller
         foreach($storeData as $newObject)
         {
             //  dd($newObject);
-            $newVariable['courseName']=$newObject->coursename;
+            $newVariable['courseName']=$newObject->courseName;
             $newVariable['image']=$newObject->image;
             $newVariable['totalPrice']=$newObject->totalPrice;
             $newVariable['discountPrice']=$newObject->discountPrice;
@@ -224,6 +242,14 @@ class HomeController extends Controller
     }
 
 
+
+
+
+
+    // Demo test only
+    function demo(){
+        return view('test');
+    }
 }
 
 
